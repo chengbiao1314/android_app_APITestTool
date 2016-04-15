@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/btn_beginTest"
+        style="@style/btn_main"
+        android:text="我要测试"/>
+    <Button
+        android:id="@+id/btn_createApi"
+        style="@style/btn_main"
+        android:text="创建API"/>
+    <Button
+        android:id="@+id/btn_setting"
+        style="@style/btn_main"
+        android:text="设置"/>
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您还没有设置URL前缀"/>
+
+    <LinearLayout
+        android:id="@+id/ll_setIP"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <EditText
+            android:id="@+id/et_ip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:onClick="action"
+                android:id="@+id/btn_cancel"
+                android:layout_width="60dp"
+                android:layout_height="46dp"
+                android:layout_marginRight="10dp"
+                android:text="取消"/>
+            <Button
+                android:onClick="action"
+                android:id="@+id/btn_save"
+                android:layout_width="60dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="10dp"
+                android:text="保存"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
